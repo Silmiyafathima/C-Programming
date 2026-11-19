@@ -1,0 +1,42 @@
+#include<stdio.h> 
+int main()
+{
+    int i=32000;
+    long l=2147483640;
+    float f=12.50123;
+    double d=12.123456789;
+    char c='A';
+    char*s="viji";
+    printf("integer:%d",i);
+    printf("\nlong:%ld",l);
+    printf("\nfloat:%f",f);
+    printf("\ndouble:%lf",d);
+    printf("\nchar:%c",c);
+    printf("\nstring:%s",s);
+    return 0;
+}
+
+
+
+Example 15
+ to find until 5 digits
+#include<stdio.h>
+int main()
+{ 
+    int no;
+    printf("Enter a number:");
+    scanf("%d",&no);
+    if(no>=0 && no<10)
+    printf("Single Digit");
+     else if(no>=10 && no<100)
+    printf("Two Digit");
+     else if(no>=100 && no<1000)
+    printf("Three Digit");
+     else if(no>=1000 && no<10000)
+    printf("Four Digit");
+     else if(no>=10000 && no<100000)
+    printf("Five Digit");
+    else
+    printf("Not Declared");
+    return 0;
+}
